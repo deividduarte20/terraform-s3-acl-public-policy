@@ -1,9 +1,4 @@
-variable "buck_test" {
+variable "s3_bucket_name" {
   type        = string
-  description = "Name of bucket"
-  default     = "dduarte2023"
-}
-
-variable "name" {
-  type = string
+  default     = "terr-test-bucket"
 }
