@@ -1,12 +1,5 @@
-resource "random_string" "random_suffix" {
-  length  = 8
-  special = false
-  upper   = false
-  }
-
-
 resource "aws_s3_bucket" "buck_test" {
-  bucket = "${var.s3_bucket_name}"-"${random_string.random_suffix}"
+  bucket_prefix = "${var.s3_bucket_name}-"
 
   tags = {
     Name        = "My bucket"
