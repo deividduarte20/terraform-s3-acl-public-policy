@@ -27,7 +27,6 @@ resource "aws_s3_bucket_policy" "buck_test" {
                 "s3:GetObjectVersion"
             ],
             "Resource": [
-                "${aws_s3_bucket.buck_test.arn}",
                 "${aws_s3_bucket.buck_test.arn}/*"
             ]
         }
